@@ -334,7 +334,7 @@ print_success "Application built successfully"
 #-------------------------------------------------------------------------
 print_step "7" "Setting Up System Persistence (PM2)"
 
-pm2 delete ajc-pisowifi 2>/dev/null || true
+pm2 delete rjd-pisowifi 2>/dev/null || true
 pm2 delete rjd-pisowifi 2>/dev/null || true
 pm2 start server.js --name "rjd-pisowifi"
 pm2 save
