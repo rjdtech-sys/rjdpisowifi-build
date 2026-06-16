@@ -7,7 +7,7 @@
 #  License server pre-configured — just activate your license key.
 #
 #  Usage:
-#    curl -sSL https://bit.ly/YOUR_LINK | sudo bash
+#    curl -sSL https://github.com/rjdtech-sys/rjdpisowifi-installer/raw/main/install.sh | sudo bash
 #
 #  Hardware Support:
 #    - Raspberry Pi (all models)
@@ -40,7 +40,7 @@ SYSTEM_VERSION="1.0.0"
 INSTALL_DIR="/opt/rjd-pisowifi"
 
 # GitHub repo (fork this to your own account for full control)
-REPO_URL="https://github.com/rjdtech-sys/rjdpisowifi-build.git"
+REPO_URL="https://github.com/rjdtech-sys/RJD-PISOWIFI.git"
 
 #=============================================================================
 #  COLOR CODES
@@ -139,7 +139,7 @@ if [ "$EUID" -ne 0 ]; then
     echo -e "${RED}❌ Please run as root (use sudo)${NC}"
     echo ""
     echo -e "  ${YELLOW}Correct command:${NC}"
-    echo -e "  ${CYAN}curl -sSL https://bit.ly/3Qh0y80 | sudo bash${NC}"
+    echo -e "  ${CYAN}curl -sSL https://github.com/rjdtech-sys/rjdpisowifi-build/raw/main/install.sh | sudo bash${NC}"
     echo ""
     exit 1
 fi
